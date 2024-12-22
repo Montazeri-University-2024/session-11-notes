@@ -4,6 +4,7 @@
 
 ### 📝 Prerequisites  
 
+ui design: https://www.figma.com/design/D7SDLU8qInyi9fs20K71Rx/Kotlin-Konnect?node-id=272-33&p=f&t=iYxnIXFcU8hbVxXt-0
 1. A working PocketBase server.  
 2. Basic knowledge of Kotlin, Jetpack Compose, and Android Studio.  
 
