@@ -1,5 +1,3 @@
-Here’s the full tutorial updated to keep everything directly in the activity, using `LazyColumn` as described:
-
 ---
 
 ## Full Tutorial: UI Design and Backend Integration with PocketBase  
