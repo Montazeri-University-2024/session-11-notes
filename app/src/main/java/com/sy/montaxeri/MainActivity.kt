@@ -57,11 +57,7 @@ class MainActivity : ComponentActivity() {
                     val data = api.getNotes()
                     if (data.isSuccessful) {
                         data.body()?.let {
-                            val coloredItems = mutableListOf<Note>()
-                            it.items.forEach { note ->
-                                coloredItems.add(note.copy(color = getRandomColor()))
-                            }
-                            notes.addAll(coloredItems)
+                            notes.addAll(it.items)
                         }
                     }
                     println(data)
@@ -85,7 +81,7 @@ class MainActivity : ComponentActivity() {
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .clip(RoundedCornerShape(18.dp))
-                                    .background(color = it.color)
+                                    .background(color = getRandomColor())
                                     .padding(12.dp)
                             ) {
                                 Text(text = it.title, fontWeight = FontWeight.Bold)
